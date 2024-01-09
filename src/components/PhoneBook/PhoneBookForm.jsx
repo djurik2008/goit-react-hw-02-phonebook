@@ -46,6 +46,7 @@ class PhoneBookForm extends Component {
             name="name"
             onChange={handleChange}
             value={name}
+            required
           ></input>
         </label>
         <label className={css.label}>
@@ -57,6 +58,7 @@ class PhoneBookForm extends Component {
             name="number"
             onChange={handleChange}
             value={number}
+            required
           ></input>
         </label>
         <button type="submit" className={css.button}>
