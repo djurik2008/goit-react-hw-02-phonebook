@@ -16,4 +16,4 @@ const PhoneBookList = ({ items, deleteContact }) => {
   return <ul className={css.list}>{elements}</ul>;
 };
 
-export default PhoneBookList;
+export { PhoneBookList };
