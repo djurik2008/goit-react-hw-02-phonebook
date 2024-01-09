@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
-import PhoneBookForm from './PhoneBookForm';
-import PhoneBookList from './PhoneBookList';
+import PhoneBookForm from './PhoneBookForm/PhoneBookForm';
+import PhoneBookList from './PhoneBookList/PhoneBookList';
 import css from './PhoneBook.module.css';
 
 class PhoneBook extends Component {
@@ -25,7 +25,7 @@ class PhoneBook extends Component {
       const normalizedCurrentName = item.name.toLowerCase();
       const currentNumber = item.number;
       return (
-        normalizedCurrentName === normalizedName && currentNumber === number
+        normalizedCurrentName === normalizedName || currentNumber === number
       );
     });
 
