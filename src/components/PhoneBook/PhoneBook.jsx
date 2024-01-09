@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { nanoid } from 'https://cdn.jsdelivr.net/npm/nanoid/nanoid.js';
 import PhoneBookForm from './PhoneBookForm';
 import PhoneBookList from './PhoneBookList';
